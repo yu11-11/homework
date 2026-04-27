@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/report/report",
+    "pages/adoption/adoption"
+  ],
+  "window": {
+    "navigationBarTitleText": "毛绒岛",
+    "navigationBarBackgroundColor": "#fff1f5",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff5f7",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

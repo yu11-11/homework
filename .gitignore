@@ -1,0 +1,11 @@
+# WeChat DevTools local-only config
+project.private.config.json
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Dependency directories
+node_modules/

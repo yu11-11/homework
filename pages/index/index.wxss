@@ -1,0 +1,140 @@
+.index-page {
+  padding: 28rpx 24rpx 40rpx;
+  background:
+    radial-gradient(circle at top left, #ffd6e2 0%, transparent 34%),
+    linear-gradient(180deg, #fff3f6 0%, #fff7f9 100%);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24rpx;
+}
+
+.hero-title {
+  font-size: 42rpx;
+  font-weight: 700;
+  color: #243127;
+}
+
+.hero-subtitle {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #66756b;
+  line-height: 1.5;
+}
+
+.hero-link {
+  padding: 16rpx 22rpx;
+  background: #fffaf2;
+  color: #7b5f3b;
+  border-radius: 999rpx;
+  font-size: 24rpx;
+}
+
+.stats-row {
+  display: flex;
+  gap: 18rpx;
+  margin-bottom: 24rpx;
+}
+
+.stat-item {
+  flex: 1;
+  padding: 24rpx 16rpx;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 38rpx;
+  font-weight: 700;
+  color: #243127;
+}
+
+.stat-label {
+  margin-top: 8rpx;
+  font-size: 22rpx;
+  color: #7b857b;
+}
+
+.map-card {
+  overflow: hidden;
+  padding: 12rpx;
+}
+
+.rescue-map {
+  width: 100%;
+  height: 760rpx;
+  border-radius: 24rpx;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-around;
+  padding: 24rpx 0;
+  color: #556359;
+  font-size: 24rpx;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+}
+
+.legend-dot {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+}
+
+.legend-dot.shelter {
+  background: #76b947;
+}
+
+.legend-dot.adoption {
+  background: #f29f05;
+}
+
+.legend-dot.stray {
+  background: #e05b4e;
+}
+
+.bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24rpx;
+  padding: 28rpx;
+  border-radius: 32rpx;
+  background: #e9f5ff;
+  color: #24425c;
+}
+
+.bar-title {
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.bar-subtitle {
+  margin-top: 8rpx;
+  font-size: 22rpx;
+  color: #6b88a2;
+}
+
+.report-button {
+  margin: 0;
+  padding: 0 28rpx;
+  height: 82rpx;
+  line-height: 82rpx;
+  border: 0;
+  border-radius: 999rpx;
+  background: #8fc8f7;
+  color: #ffffff;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+
+.report-button::after {
+  border: 0;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>毛绒岛</title>
+    <meta
+      name="description"
+      content="毛绒岛是一个关注流浪动物救助与领养的公益展示项目，包含救助地图、上报入口和领养信息。"
+    />
+    <link rel="stylesheet" href="./web.css" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="hero-tag">公益展示项目</span>
+          <h1>毛绒岛</h1>
+          <p>
+            一个用于展示流浪动物救助、上报与领养信息的项目页面。这里用网页方式还原小程序核心界面，方便直接通过浏览器访问查看。
+          </p>
+          <div class="hero-actions">
+            <a class="action-primary" href="#screens">查看界面</a>
+            <a class="action-secondary" href="#adoption">查看领养</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="hero-stat">
+            <strong>4</strong>
+            <span>地图点位</span>
+          </div>
+          <div class="hero-stat">
+            <strong>3</strong>
+            <span>待领养动物</span>
+          </div>
+          <div class="hero-stat">
+            <strong>1</strong>
+            <span>公益入口</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="summary">
+        <article class="summary-card">
+          <h2>首页地图</h2>
+          <p>集中展示救助站、领养点和待关注流浪动物位置，方便快速了解分布情况。</p>
+        </article>
+        <article class="summary-card">
+          <h2>上报入口</h2>
+          <p>支持选择动物类型、上传图片、填写情况描述，便于志愿者及时跟进。</p>
+        </article>
+        <article class="summary-card">
+          <h2>领养列表</h2>
+          <p>卡片式呈现待领养动物信息，简洁清晰，适合公益宣传展示。</p>
+        </article>
+      </section>
+
+      <section class="screens" id="screens">
+        <div class="section-head">
+          <span>界面展示</span>
+          <h2>浏览器版项目预览</h2>
+        </div>
+
+        <div class="phone-grid">
+          <article class="phone-screen">
+            <div class="screen-top">
+              <span class="time-dot"></span>
+              <strong>毛绒岛</strong>
+              <span class="screen-meta">首页</span>
+            </div>
+            <div class="screen-body home-screen">
+              <div class="mini-hero">
+                <div>
+                  <h3>毛绒岛</h3>
+                  <p>快速查看救助站、领养点和待救助位置</p>
+                </div>
+                <button class="cream-chip">查看领养</button>
+              </div>
+
+              <div class="stats-row">
+                <div class="mini-stat">
+                  <strong>1</strong>
+                  <span>救助站</span>
+                </div>
+                <div class="mini-stat">
+                  <strong>1</strong>
+                  <span>领养点</span>
+                </div>
+                <div class="mini-stat">
+                  <strong>2</strong>
+                  <span>待关注</span>
+                </div>
+              </div>
+
+              <div class="map-mock">
+                <div class="map-grid"></div>
+                <button class="map-pin shelter" type="button">救助站</button>
+                <button class="map-pin adoption" type="button">领养点</button>
+                <button class="map-pin stray-one" type="button">流浪犬</button>
+                <button class="map-pin stray-two" type="button">流浪猫</button>
+              </div>
+
+              <div class="legend-row">
+                <span><i class="dot shelter"></i>救助站</span>
+                <span><i class="dot adoption"></i>领养点</span>
+                <span><i class="dot stray"></i>流浪动物</span>
+              </div>
+
+              <div class="report-panel">
+                <div>
+                  <strong>发现流浪动物或救助需求</strong>
+                  <p>拍照上传，让更多人及时看到</p>
+                </div>
+                <button class="blue-pill">立即上报</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="phone-screen">
+            <div class="screen-top screen-top-blue">
+              <span class="time-dot"></span>
+              <strong>毛绒岛</strong>
+              <span class="screen-meta">上报</span>
+            </div>
+            <div class="screen-body report-screen">
+              <div class="screen-title">
+                <h3>流浪动物上报</h3>
+                <p>上传图片并填写描述，便于志愿者尽快跟进</p>
+              </div>
+
+              <div class="form-card">
+                <label class="field">
+                  <span>动物类型</span>
+                  <div class="white-input">猫咪</div>
+                </label>
+                <label class="field">
+                  <span>现场图片</span>
+                  <div class="white-upload">
+                    <em>上传照片</em>
+                  </div>
+                </label>
+                <label class="field">
+                  <span>情况描述</span>
+                  <div class="white-textarea">请填写发现地点、动物状态、是否受伤等信息</div>
+                </label>
+                <label class="field">
+                  <span>联系方式（选填）</span>
+                  <div class="white-input">方便回访时联系你</div>
+                </label>
+              </div>
+
+              <button class="submit-pill">提交上报</button>
+            </div>
+          </article>
+
+          <article class="phone-screen" id="adoption">
+            <div class="screen-top">
+              <span class="time-dot"></span>
+              <strong>毛绒岛</strong>
+              <span class="screen-meta">领养列表</span>
+            </div>
+            <div class="screen-body adoption-screen" id="adoption-list"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="footer-note">
+        <h2>说明</h2>
+        <p>
+          这是给浏览器访问准备的展示页，便于发 GitHub Pages 链接给老师或同学查看。实际交互版本仍然是微信小程序。
+        </p>
+      </section>
+    </main>
+
+    <script src="./web.js"></script>
+  </body>
+  </html>

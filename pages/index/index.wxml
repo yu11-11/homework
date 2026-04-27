@@ -1,0 +1,54 @@
+<view class="page-shell index-page">
+  <view class="hero">
+    <view>
+      <view class="hero-title">毛绒岛</view>
+      <view class="hero-subtitle">快速查看救助站、领养点和待救助位置</view>
+    </view>
+    <view class="hero-link" bindtap="goAdoption">查看领养</view>
+  </view>
+
+  <view class="stats-row">
+    <block wx:for="{{stats}}" wx:key="label">
+      <view class="card stat-item">
+        <view class="stat-value">{{item.value}}</view>
+        <view class="stat-label">{{item.label}}</view>
+      </view>
+    </block>
+  </view>
+
+  <view class="card map-card">
+    <map
+      class="rescue-map"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      scale="{{scale}}"
+      markers="{{markers}}"
+      show-location
+      enable-zoom
+      enable-scroll
+    />
+  </view>
+
+  <view class="legend">
+    <view class="legend-item">
+      <view class="legend-dot shelter"></view>
+      <text>救助站</text>
+    </view>
+    <view class="legend-item">
+      <view class="legend-dot adoption"></view>
+      <text>领养点</text>
+    </view>
+    <view class="legend-item">
+      <view class="legend-dot stray"></view>
+      <text>流浪动物</text>
+    </view>
+  </view>
+
+  <view class="bottom-bar">
+    <view class="bar-text">
+      <view class="bar-title">发现流浪动物或救助需求</view>
+      <view class="bar-subtitle">拍照上传，让更多人及时看到</view>
+    </view>
+    <button class="report-button" bindtap="goReport">立即上报</button>
+  </view>
+</view>

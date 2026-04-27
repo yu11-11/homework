@@ -1,0 +1,53 @@
+<view class="page-shell report-page">
+  <view class="header">
+    <view class="header-title">流浪动物上报</view>
+    <view class="header-subtitle">上传图片并填写描述，便于志愿者尽快跟进</view>
+  </view>
+
+  <view class="card form-card">
+    <view class="form-item">
+      <view class="label">动物类型</view>
+      <picker mode="selector" range="{{animalTypes}}" value="{{typeIndex}}" bindchange="onTypeChange">
+        <view class="picker-value">{{animalTypes[typeIndex]}}</view>
+      </picker>
+    </view>
+
+    <view class="form-item">
+      <view class="label">现场图片</view>
+      <view class="upload-box" bindtap="chooseImage">
+        <block wx:if="{{imageList.length}}">
+          <image class="preview-image" src="{{imageList[0]}}" mode="aspectFill" />
+        </block>
+        <block wx:else>
+          <view class="upload-placeholder">
+            <view class="upload-icon">+</view>
+            <view class="upload-text">上传照片</view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <view class="form-item">
+      <view class="label">情况描述</view>
+      <textarea
+        class="textarea"
+        placeholder="请填写发现地点、动物状态、是否受伤等信息"
+        maxlength="300"
+        bindinput="updateDescription"
+        value="{{description}}"
+      />
+    </view>
+
+    <view class="form-item">
+      <view class="label">联系方式（选填）</view>
+      <input
+        class="input"
+        placeholder="方便回访时联系你"
+        bindinput="updateContact"
+        value="{{contact}}"
+      />
+    </view>
+  </view>
+
+  <button class="submit-button" bindtap="submitReport">提交上报</button>
+</view>

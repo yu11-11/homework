@@ -1,0 +1,22 @@
+<view class="page-shell adoption-page">
+  <view class="adoption-header">
+    <view class="adoption-title">待领养动物</view>
+    <view class="adoption-subtitle">每一次领养，都是一次新的开始</view>
+  </view>
+
+  <view class="pet-list">
+    <block wx:for="{{pets}}" wx:key="id">
+      <view class="card pet-card">
+        <image class="pet-image" src="{{item.image}}" mode="aspectFill" />
+        <view class="pet-content">
+          <view class="pet-top">
+            <view class="pet-name">{{item.name}}</view>
+            <view class="pet-type">{{item.type}}</view>
+          </view>
+          <view class="pet-age">{{item.age}}</view>
+          <view class="pet-intro">{{item.intro}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
