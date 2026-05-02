@@ -29,6 +29,17 @@
     />
   </view>
 
+  <view wx:if="{{!hasLocation}}" class="location-tip">
+    <text>未获取到当前位置，地图暂以默认位置展示。</text>
+    <text class="location-action" bindtap="retryLocation">重新定位</text>
+  </view>
+
+  <view wx:if="{{nearestShelter}}" class="card nearest-card">
+    <view class="nearest-label">离你最近的救助点</view>
+    <view class="nearest-name">{{nearestShelter.name}}</view>
+    <view class="nearest-distance">约 {{nearestShelter.distanceText}}</view>
+  </view>
+
   <view class="legend">
     <view class="legend-item">
       <view class="legend-dot shelter"></view>

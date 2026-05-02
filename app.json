@@ -11,6 +11,11 @@
     "backgroundColor": "#fff5f7",
     "backgroundTextStyle": "light"
   },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于首页地图实时定位与附近救助点展示"
+    }
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

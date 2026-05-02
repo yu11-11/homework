@@ -3,30 +3,30 @@ App({
     shelterPoints: [
       {
         id: 1,
-        name: '向阳救助站',
-        latitude: 31.2304,
-        longitude: 121.4737,
+        name: '朝阳爱心救助站',
+        latitude: 39.9219,
+        longitude: 116.4436,
         type: 'shelter'
       },
       {
         id: 2,
-        name: '海棠领养点',
-        latitude: 31.2243,
-        longitude: 121.4768,
+        name: '海淀领养服务点',
+        latitude: 39.9854,
+        longitude: 116.3055,
         type: 'adoption'
       },
       {
         id: 3,
         name: '待救助流浪犬',
-        latitude: 31.228,
-        longitude: 121.468,
+        latitude: 39.9087,
+        longitude: 116.3975,
         type: 'stray'
       },
       {
         id: 4,
         name: '待救助流浪猫',
-        latitude: 31.2338,
-        longitude: 121.4812,
+        latitude: 39.9389,
+        longitude: 116.4274,
         type: 'stray'
       }
     ],
