@@ -35,7 +35,7 @@
           </div>
           <div class="hero-stat">
             <strong>1</strong>
-            <span>公益入口</span>
+            <span>最近救助点提示</span>
           </div>
         </div>
       </section>
@@ -43,7 +43,7 @@
       <section class="summary">
         <article class="summary-card">
           <h2>首页地图</h2>
-          <p>集中展示救助站、领养点和待关注流浪动物位置，方便快速了解分布情况。</p>
+          <p>集中展示北京测试救助站、领养点和待关注流浪动物位置，并模拟实时定位展示。</p>
         </article>
         <article class="summary-card">
           <h2>上报入口</h2>
@@ -69,6 +69,11 @@
               <span class="screen-meta">首页</span>
             </div>
             <div class="screen-body home-screen">
+              <div class="location-banner">
+                <span class="location-indicator"></span>
+                <span>已开启实时定位，当前模拟位置：北京</span>
+              </div>
+
               <div class="mini-hero">
                 <div>
                   <h3>毛绒岛</h3>
@@ -94,15 +99,23 @@
 
               <div class="map-mock">
                 <div class="map-grid"></div>
-                <button class="map-pin shelter" type="button">救助站</button>
-                <button class="map-pin adoption" type="button">领养点</button>
+                <button class="map-pin user-pin" type="button">你的位置</button>
+                <button class="map-pin shelter" type="button">朝阳救助站</button>
+                <button class="map-pin adoption" type="button">海淀领养点</button>
                 <button class="map-pin stray-one" type="button">流浪犬</button>
                 <button class="map-pin stray-two" type="button">流浪猫</button>
+              </div>
+
+              <div class="nearest-panel">
+                <span class="nearest-kicker">离你最近的救助点</span>
+                <strong>朝阳爱心救助站</strong>
+                <p>约 4.2 公里</p>
               </div>
 
               <div class="legend-row">
                 <span><i class="dot shelter"></i>救助站</span>
                 <span><i class="dot adoption"></i>领养点</span>
+                <span><i class="dot user"></i>我的位置</span>
                 <span><i class="dot stray"></i>流浪动物</span>
               </div>
 

@@ -234,10 +234,31 @@ a {
 .mini-hero,
 .report-panel,
 .form-card,
+.nearest-panel,
 .pet-card {
   background: rgba(255, 255, 255, 0.76);
   border: 1px solid rgba(255, 255, 255, 0.72);
   box-shadow: 0 18px 34px rgba(72, 88, 104, 0.08);
+}
+
+.location-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  border-radius: 18px;
+  background: rgba(233, 245, 255, 0.92);
+  color: #58718a;
+  font-size: 14px;
+}
+
+.location-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #45a3ef;
+  box-shadow: 0 0 0 6px rgba(69, 163, 239, 0.16);
 }
 
 .mini-hero {
@@ -363,6 +384,36 @@ a {
   background: #f19191;
 }
 
+.map-pin.user-pin {
+  top: 164px;
+  left: 158px;
+  background: #4b9df0;
+}
+
+.nearest-panel {
+  margin-bottom: 16px;
+  padding: 18px;
+  border-radius: 24px;
+}
+
+.nearest-kicker {
+  display: block;
+  color: #7d8790;
+  font-size: 14px;
+}
+
+.nearest-panel strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 22px;
+  color: #243127;
+}
+
+.nearest-panel p {
+  margin: 8px 0 0;
+  color: #3e7cad;
+}
+
 .legend-row {
   display: flex;
   justify-content: space-between;
@@ -395,6 +446,10 @@ a {
 
 .dot.stray {
   background: var(--red);
+}
+
+.dot.user {
+  background: #4b9df0;
 }
 
 .report-panel {

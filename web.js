@@ -1,3 +1,30 @@
+const shelterPoints = [
+  {
+    name: "朝阳爱心救助站",
+    latitude: 39.9219,
+    longitude: 116.4436,
+    type: "shelter"
+  },
+  {
+    name: "海淀领养服务点",
+    latitude: 39.9854,
+    longitude: 116.3055,
+    type: "adoption"
+  },
+  {
+    name: "待救助流浪犬",
+    latitude: 39.9087,
+    longitude: 116.3975,
+    type: "stray"
+  },
+  {
+    name: "待救助流浪猫",
+    latitude: 39.9389,
+    longitude: 116.4274,
+    type: "stray"
+  }
+];
+
 const adoptionList = [
   {
     name: "奶糖",
